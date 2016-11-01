@@ -1,0 +1,58 @@
+<div>
+	<md-toolbar class="md-primary">
+		<md-button ng-click="toggleLeft()" class="md-raised">
+			Toggle Sidenav
+		</md-button>
+		<div class="md-toolbar-tools">
+			<h2 class="md-flex">M4U</h2>
+		</div>
+	</md-toolbar>
+</div>
+
+<div layout="column" style="height: 500px;" ng-cloak="">
+
+	<section layout="row" flex="">
+
+		<md-sidenav class="md-sidenav-left" md-component-id="left" md-disable-backdrop="" md-whiteframe="4">
+
+			<md-toolbar class="md-theme-indigo">
+				<h1 class="md-toolbar-tools">Name</h1>
+				<md-button ng-click="toggleLeft()">
+					Close this Sidenav
+				</md-button>
+			</md-toolbar>
+
+			<md-content layout-margin="">
+				<p>
+					This sidenav is not showing any backdrop, where users can click on it, to close the sidenav.
+				</p>
+
+			</md-content>
+
+		</md-sidenav>
+
+		<md-content flex="" layout-padding="" layout-align="top center">
+			<h1>Popular Movies</h1>
+			<div class='md-padding' layout="row" layout-wrap>
+				<!--<div md-swipe-left="onSwipeLeft()">-->
+					<md-card style="width: 950px;" ng-repeat="image in images">
+						<img src={{image}} ng-click="detail()" class="md-card-image" alt="user avatar">
+						<!--<md-card-content>
+							<h2>{{user}}</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+								aliqua
+							</p>
+						</md-card-content>
+						<div class="md-actions" layout="row" layout-align="end center">
+							<md-button>Save</md-button>
+							<md-button>View</md-button>
+						</div>-->
+					</md-card>
+				<!--</div>-->
+			</div>
+		</md-content>
+		
+		<md-footer></md-footer>
+	</section>
+
+</div>
