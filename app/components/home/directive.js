@@ -28,6 +28,8 @@ angular.module('app.directives.home', [])
 					}
 				}
 
+				//chamges
+
 				// $scope.onSwipeLeft = function (ev) {
 				// 	alert('You swiped left!!');
 				// };
